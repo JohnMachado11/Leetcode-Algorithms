@@ -6,7 +6,7 @@ class Solution:
     def defangIPaddr(self, address: str) -> str:
         return address.replace(".", "[.]")
 
-print(Solution.defangIPaddr(str, "1.1.1.1"))
+print(Solution.defangIPaddr(str, "1.1.1.1")) # 1[.]1[.]1[.]1
 
 # Example 1:
 # Input: address = "1.1.1.1"
