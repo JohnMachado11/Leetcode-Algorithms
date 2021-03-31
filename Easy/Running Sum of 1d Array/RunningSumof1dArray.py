@@ -18,7 +18,7 @@ class Solution:
                 new_list.append(storage)
         return new_list
 
-print(Solution.runningSum(List, [1,2,3,4]))
+print(Solution.runningSum(List, [1,2,3,4])) # [1,3,6,10]
 
 # Example 1:
 # Input: nums = [1,2,3,4]
