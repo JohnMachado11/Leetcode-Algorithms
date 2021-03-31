@@ -11,7 +11,7 @@ var defangIPaddr = function(address) {
     return address.replace(/\./g, "[.]");
 };
 
-console.log(defangIPaddr("1.1.1.1"))
+console.log(defangIPaddr("1.1.1.1")) // 1[.]1[.]1[.]1
 
 // Example 1:
 // Input: address = "1.1.1.1"
