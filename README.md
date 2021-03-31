@@ -1,6 +1,5 @@
 # Leetcode-Algorithms
-
-All Algorithms are currently implemented in:
+Nearly all Algorithms are currently implemented in:
 
 **Python**
 
