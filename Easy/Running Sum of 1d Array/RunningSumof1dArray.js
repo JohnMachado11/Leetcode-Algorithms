@@ -25,7 +25,7 @@ var runningSum = function(nums) {
     return new_array;
 };
 
-console.log(runningSum([1,2,3,4])); 
+console.log(runningSum([1,2,3,4])); // [1,3,6,10]
 
 // Example 1:
 // Input: nums = [1,2,3,4]
