@@ -21,11 +21,11 @@ console.log(reverser("I like coding :D")); // D: gnidoc ekil I
 // Method 2
 
 function reverser2(string){
-    // turns the string into an array
+    // Places the string into an array
     let split_str = string.split("");
-    // reversers the elements of the array
+    // Reverses the elements of the array
     let rev_str = split_str.reverse();
-    //combines all the elements of the reversed array into a string
+    // Combines all the elements of the reversed array into a string
     let final_str = rev_str.join(""); 
 
     return(final_str);
