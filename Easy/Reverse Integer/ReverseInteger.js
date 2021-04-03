@@ -10,7 +10,7 @@
 
 var reverse = function(x) {
     let result = [];
-    let split_num = x.toString().split('')
+    let split_num = x.toString().split('');
 
     for(let i = split_num.length - 1; i <= split_num.length; i--){
         if(i < 0){
@@ -29,7 +29,7 @@ var reverse = function(x) {
     }
     
     if(result[0] == 0){
-        result.splice(0, 1)
+        result.splice(0, 1);
         return result.join("");
     }
 
@@ -41,10 +41,10 @@ var reverse = function(x) {
     }
 };
 
-console.log(reverse(123)) // 321
-console.log(reverse(-123)) // -123
-console.log(reverse(120)) // 21
-console.log(reverse(0)) // 0
+console.log(reverse(123)); // 321
+console.log(reverse(-123)); // -123
+console.log(reverse(120)); // 21
+console.log(reverse(0)); // 0
 
 // Example 1:
 // Input: x = 123
