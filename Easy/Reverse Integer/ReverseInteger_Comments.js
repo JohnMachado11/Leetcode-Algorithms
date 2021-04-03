@@ -22,8 +22,7 @@ var reverse = function(x) {
         if(i < 0){
             break;
         }
-        // Check if a single 0 was inputted as x,
-        // if so simply return it.
+        // Check if a single 0 was inputted as x, if so simply return it.
         else if(x == 0){
             return 0;
         }
@@ -33,8 +32,7 @@ var reverse = function(x) {
         if(split_num[i] == "-"){
             result.splice(0, 0, split_num[i]);
         }
-        // Pushing the elements of the split_num array
-        // from back to front into result array. 
+        // Pushing the elements of the split_num array from back to front into result array. 
         else{
             result.push(split_num[i]);
         }
@@ -44,10 +42,9 @@ var reverse = function(x) {
         result.splice(0, 1);
         return result.join("");
     }
-    // Signed 32-bit integer rule bounds. 
-    // If the number within the result array is larger
-    // than 2,147,483,647 or smaller than -2,147,483,648
-    // then return 0. Else, return the result array and we are done. :D
+    // Signed 32-bit integer rule bounds. If the number within the result array is larger
+    // than 2,147,483,647 or smaller than -2,147,483,648 then return 0.
+    // Else, return the result array and we are done. :D
     if(result.join("") > Math.pow(2, 31) -1 || result.join("") < Math.pow(-2,31)){
         return 0;
     }
@@ -56,10 +53,10 @@ var reverse = function(x) {
     }
 };
 
-console.log(reverse(123));
-console.log(reverse(-123));
-console.log(reverse(120));
-console.log(reverse(0));
+console.log(reverse(123)); // 321
+console.log(reverse(-123)); // -321
+console.log(reverse(120)); //21
+console.log(reverse(0)); // 0
 
 // Example 1:
 // Input: x = 123
