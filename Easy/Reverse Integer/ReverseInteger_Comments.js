@@ -13,7 +13,7 @@ var reverse = function(x) {
     // Take the x input which is an integer, convert it to a string
     // and create an array with each string element seperated by each character.
     // e.g 123 --> "123" --> [1,2,3]
-    let split_num = x.toString().split('')
+    let split_num = x.toString().split('');
     // Elements of split_num array will be pushed in order from last index to the first index.
     // Variable i is set to the length of the split_num array.
     // e.g. if split_num length = 3, i will be set to 2.
@@ -41,7 +41,7 @@ var reverse = function(x) {
     }
     // If a 0 is located at index 0 of the result array then remove it. 
     if(result[0] == 0){
-        result.splice(0, 1)
+        result.splice(0, 1);
         return result.join("");
     }
     // Signed 32-bit integer rule bounds. 
@@ -56,10 +56,10 @@ var reverse = function(x) {
     }
 };
 
-console.log(reverse(123))
-console.log(reverse(-123))
-console.log(reverse(120))
-console.log(reverse(0)) 
+console.log(reverse(123));
+console.log(reverse(-123));
+console.log(reverse(120));
+console.log(reverse(0));
 
 // Example 1:
 // Input: x = 123
