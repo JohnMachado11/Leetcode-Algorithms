@@ -26,9 +26,9 @@ var reverse = function(x) {
         else if(x == 0){
             return 0;
         }
-        // If on the last loop iteration (0) it finds a "-" (minus/negative sign) in split_num array,
+        // If on the last loop iteration (0) a "-" (negative sign) is found in split_num array,
         // it will grab the "-" and put it to the very front of the result array at index 0. 
-        // e.g. result = [3,2,1] --> result = [-,3,2,1]
+        // e.g. result = [3,2,1,-] --> result = [-,3,2,1]
         if(split_num[i] == "-"){
             result.splice(0, 0, split_num[i]);
         }
