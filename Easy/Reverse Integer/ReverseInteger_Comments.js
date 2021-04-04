@@ -17,7 +17,7 @@ var reverse = function(x) {
     // Elements of split_num array will be pushed in order from last index to the first index.
     // Variable i is set to the length of the split_num array.
     // e.g. if split_num length = 3, i will be set to 2.
-    for(let i = split_num.length - 1; i <= split_num.length; i--){
+    for(let i = split_num.length - 1; i < split_num.length; i--){
         // Once i decrements to -1 exit the loop.
         if(i < 0){
             break;
