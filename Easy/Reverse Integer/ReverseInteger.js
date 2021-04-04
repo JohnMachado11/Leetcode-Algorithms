@@ -12,7 +12,7 @@ var reverse = function(x) {
     let result = [];
     let split_num = x.toString().split('');
 
-    for(let i = split_num.length - 1; i <= split_num.length; i--){
+    for(let i = split_num.length - 1; i < split_num.length; i--){
         if(i < 0){
             break;
         }
