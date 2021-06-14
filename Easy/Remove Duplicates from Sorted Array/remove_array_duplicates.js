@@ -19,7 +19,7 @@ var removeDuplicates = function(nums) {
                 i -= 1; // resets index position to 0 on loop
             }
         }
-        return(`${nums.length}, nums = [${nums}]`);
+        return(nums.length);
     };
 
 console.log(removeDuplicates([1,1,2])) // [1,2]
