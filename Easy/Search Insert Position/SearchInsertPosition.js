@@ -20,15 +20,15 @@ var searchInsert = function(nums, target) {
             if (target < nums[i]) {
                 nums.splice(i, 0, target);
                 return i;
-            } else if (target > nums[i] && nums[i + 1] == undefined) {
+            } else if (target > nums[i] && nums[i + 1] === undefined) {
                 nums.push(target);
                 return nums.length - 1;
             } else if (target > nums[i] && target < nums[i + 1]) {
                 nums.splice(i + 1, 0, target)
                 return i + 1;
-            }; 
-        };
-    };
+            } 
+        }
+    }
 };
 
 console.log(searchInsert([1,3,5,6], 5)) // 2
